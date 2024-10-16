@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff3d00;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #ff3d00, #ff9e80);
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.categories {
+    padding: 20px;
+}
+
+.category {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff3d00;
+    color: white;
+}
+
+.box {
+    background-color: rgba(194, 180, 155, 0.562);
+    border: 1px solid #ddd;
+    padding:10px ;
+    width:200px ;
+    box-shadow:0 2px rgb(0,0,0,0.1) ;
+    transition: transfrom 2s;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+#kuliner-container {
+    display: flex;
+    grid-template-columns: repeat(3r, 1fr);
+    width: 100%;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #eb5600;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    border: radius 5px; 
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c25700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 1s, transform 1s;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #b35700;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .categories {
+        padding: 10px;
+    }
+
+    .category {
+        margin: 5px 0;
+    }
+
+    .box {
+        width: 100%; 
+        border-radius: 5%;
+        
+    }
+    
+    .box img {
+        padding-left: 50px;
+        
+    }
+
+    button {
+        width: 100%; /* Full width on mobile */
+    }
+    
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%; /* Full width on mobile */
+    }
+    #kuliner-container {
+        display: flex;
+        grid-template-columns: repeat(3r, 1fr);
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
